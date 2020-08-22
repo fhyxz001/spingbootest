@@ -21,7 +21,7 @@ public class testController {
     @Autowired
     private indexService service;
 
-    @RequestMapping("/")
+    @RequestMapping("")
     public List<weburl> test(){
         return service.findAll();
     }
