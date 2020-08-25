@@ -2,7 +2,6 @@ package com.hexb.springbootest.Service;
 
 import com.hexb.springbootest.dao.weburlMapper;
 import com.hexb.springbootest.model.weburl;
-import com.hexb.springbootest.model.weburlExample;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -23,4 +22,5 @@ public class indexServiceImpl implements indexService {
     public List<weburl> findAll() {
         return mapper.findAll();
     }
+
 }
