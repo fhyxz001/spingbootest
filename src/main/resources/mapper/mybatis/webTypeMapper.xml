@@ -55,4 +55,7 @@
     set type = #{type,jdbcType=VARCHAR}
     where tid = #{tid,jdbcType=INTEGER}
   </update>
+  <select id="selectAllType" resultMap="BaseResultMap">
+    select * from web_type
+  </select>
 </mapper>

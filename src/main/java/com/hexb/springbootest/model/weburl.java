@@ -7,7 +7,7 @@ public class weburl {
 
     private String url;
 
-    private String describe;
+    private String desc;
 
     private String type;
 
@@ -36,11 +36,11 @@ public class weburl {
     }
 
     public String getDescribe() {
-        return describe;
+        return desc;
     }
 
     public void setDescribe(String describe) {
-        this.describe = describe == null ? null : describe.trim();
+        this.desc = describe == null ? null : describe.trim();
     }
 
     public String getType() {

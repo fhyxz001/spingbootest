@@ -5,10 +5,13 @@
     <id column="webId" property="webid" jdbcType="INTEGER" />
     <result column="name" property="name" jdbcType="VARCHAR" />
     <result column="url" property="url" jdbcType="VARCHAR" />
-    <result column="describe" property="describe" jdbcType="VARCHAR" />
+    <result column="desc" property="desc" jdbcType="VARCHAR" />
     <result column="type" property="type" jdbcType="VARCHAR" />
   </resultMap>
   <select id="findAll" resultMap="BaseResultMap">
     select * from sys_web_url
   </select>
+  <insert id="addone">
+
+  </insert>
 </mapper>

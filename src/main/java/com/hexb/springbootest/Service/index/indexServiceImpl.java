@@ -1,6 +1,8 @@
-package com.hexb.springbootest.Service;
+package com.hexb.springbootest.Service.index;
 
+import com.hexb.springbootest.dao.webTypeMapper;
 import com.hexb.springbootest.dao.weburlMapper;
+import com.hexb.springbootest.model.webType;
 import com.hexb.springbootest.model.weburl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -17,10 +19,22 @@ import java.util.List;
 @Service
 public class indexServiceImpl implements indexService {
     @Autowired
-    private weburlMapper mapper;
+    weburlMapper Urlmapper;
+    @Autowired
+    webTypeMapper typeMapper;
+
     @Override
     public List<weburl> findAll() {
-        return mapper.findAll();
+        return Urlmapper.findAll();
     }
 
+    @Override
+    public List<webType> selectAllType() {
+        return typeMapper.selectAllType();
+    }
+
+    @Override
+    public weburl addone(weburl form) {
+        return null;
+    }
 }
